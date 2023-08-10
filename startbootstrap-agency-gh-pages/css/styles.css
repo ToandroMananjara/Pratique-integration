@@ -110,16 +110,20 @@ body {
   box-sizing: border-box;
   /* overflow: scroll; */
 }
-
+header{
+  position: sticky;
+  top: 0;
+}
 header nav{
   display: flex;
   padding: 0 100px;
+  background: #000;
+
 }
 header nav ul{
   width: 100%;
   display: flex;
   gap: 30px;
-  position: relative;
   justify-content: end;
   /* margin-right: 70px; */
 }
@@ -182,7 +186,48 @@ header nav ul li a{
   padding: 20px 40px;
   cursor: pointer;
 }
-
+.service{
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.service h2{
+  font-size: 40px;
+  margin: 0;
+}
+.service .service-container{
+   display: flex;
+   /* gap: 40px; */
+   flex-wrap: wrap;
+   justify-content: space-around;
+  padding: 0 20px;
+}
+.service .service-container .service-item{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.service .service-container .service-item .service-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 140px;
+  color: var(--bs-white);
+  font-size: 80px;
+  border-radius: 50%;
+  padding: 0;
+  background: var(--bs-primary);
+}
+.service .service-container .service-item .title h3{
+  font-size: 24px;
+}
 
 .img-bg-contact-us img{
   width: 100%;
