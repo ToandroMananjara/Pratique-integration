@@ -267,19 +267,79 @@ header nav ul li a{
   margin:20px;
   /* width:25%; */
 }
-.portfolio .container-porfolio .container-item img{
-  /* width: 100%; */
+.about{
+  text-align: center;
+  padding-bottom: 100px;
+}
+.about h2{
+  margin-top: 50px;
+}
+.container-about h6{
+  margin-bottom: 50px;
+}
+.about .container-about-item{
+  text-align: initial;
+}
 
-} 
+.div-item-1{
+  display: flex;
+  justify-content: start;
+  position: relative;
+  text-align: right;
+  
+ 
+}
+.div-item-2{
+  display: flex;
+  justify-content: end;
+  position: relative; 
+  margin: 0;
+  text-align: left;
+ 
+  
+}
+.container-about-item-left,.container-about-item-right{
+  padding: 0 150px;
+  padding-bottom: 100px;
+  position: relative;
+}
+.container-about-item-left{
 
+  border-right: 1px solid var(--bs-secondary);
+}
+.container-about-item-right{
 
+  border-left: 1px solid var(--bs-secondary);
+}
+.img-left{
+  position: absolute;
+  top:0;
+  right: -80px;
+}
+.img-left img{
+  width: 160px;
+  height: 160px;
+  border: 5px solid var(--bs-border-color) ;
+  border-radius: 50%;
+}
+.img-right{
+  position: absolute;
+  top:0;
+  left: -80px;
+}
+.img-right img{
+  width: 150px;
+  height: 150px;
+  border: 5px solid var(--bs-border-color) ;
+  border-radius: 50%;
+}
 
-
-
-
-
-
-
+.team{
+  background: var(--bs-light);
+}
+.team .container-team{
+  text-align: center;
+}
 
 
 .img-bg-contact-us img{
