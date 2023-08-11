@@ -101,7 +101,7 @@ h2{
   }
 }
 .ancre-service{
-  bottom: 120px;
+  bottom: 75px;
 }
 .ancre-portfolio,.ancre-about{
   bottom: 75px;
@@ -128,11 +128,12 @@ header{
   top: 0;
   z-index: 2;
   margin: 0;
+  height: 74px;
 }
 header nav{
   display: flex;
   padding: 20px 100px;
-  background: #000;
+  background: var(--bs-body-color);
   
 }
 header nav ul{
@@ -162,30 +163,19 @@ header nav ul li a{
 }
 
 .home{
-  height: calc(100vh - 30px);
+  height: calc(100vh - 75px);
   width: 100%;
   color: var(--bs-white);
   margin: 0;
 
 }
-.bg-home{
-  margin: 0;
-  top:0;
-  position: absolute;
-  z-index: -1;
-  height: 100%;
-  /* height: 100vh; */
 
-}
-.bg-home img{
-  margin: 0;
-  width: calc(100vw - 15px);
-  height: 100%;
-}
+
 .home{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image:url('../img/header-bg.jpg');
 }
 .home-container{
   text-align: center;
@@ -205,6 +195,11 @@ header nav ul li a{
   background: var(--bs-link-color);
   padding: 20px 40px;
   cursor: pointer;
+}
+.home-container .tell-me-more button{
+  background: transparent;
+  border: none;
+  color: var(--bs-body-bg);
 }
 .service{
   /* height: 100vh; */
@@ -268,7 +263,7 @@ header nav ul li a{
 }
 .portfolio .container-porfolio .container-item{
   background: var(--bs-body-bg);
-  margin:20px;
+  /* margin:20px; */
   /* width:25%; */
 }
 .about{
@@ -375,18 +370,11 @@ header nav ul li a{
   height: 100%;
   color: var(--bs-body-bg);
   text-align: center;
-  background: #000;
+  background-image: url(../img/map-image.png);
+  background-color: #000 ;
+  
 }
-.img-bg-contact-us{
-  z-index: -2;
-  height: 100%;
-}
-.img-bg-contact-us img{
-  width: calc(100vw - 15px);
-  height: calc(100vh - 75px);
-  margin: 0;
-  background: black;
-}
+
 .div-form{
   margin-top: 50px;
 }
@@ -394,6 +382,7 @@ header nav ul li a{
   padding: 0 10px;
 }
 .form-left input{
+  width: 100%;
   height: 70px;
   border: none;
   border-radius: 5px;
@@ -418,12 +407,33 @@ header nav ul li a{
 footer{
   padding:20px 0;
 }
-
+@media only screen and (max-width:960px){
+  header nav ul{
+    display: none;
+  }
+}
+/* @media only screen and (max-width:768px){
+  .home
+} */
   /* font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
-  @media only screen and (max-width:600px){
+  @media only screen and (max-width:576px){
+    .home .home-container span{
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .home .home-container h1{
+      font-size: 40px;
+    }
     header nav ul{
       display: none;
     }
+    header nav{
+      padding: 20px 5px;
+    }
+    .logo svg{
+      width: 150px;
+    }
+
     .container-about-item-left,.container-about-item-right{
       padding: 0 50px ;
       padding-bottom: 100px;
