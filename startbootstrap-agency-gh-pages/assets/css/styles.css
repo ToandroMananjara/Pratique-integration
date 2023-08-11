@@ -127,6 +127,7 @@ header{
   position:sticky;
   top: 0;
   z-index: 2;
+  margin: 0;
 }
 header nav{
   display: flex;
@@ -369,24 +370,52 @@ header nav ul li a{
   border-radius: 50%;
   color: #fff;
 }
-.team .container-team p{
 
-}
 .contact-us{
-  height: 100vh;
+  height: 100%;
   color: var(--bs-body-bg);
   text-align: center;
+  background: #000;
 }
 .img-bg-contact-us{
   z-index: -2;
   height: 100%;
 }
 .img-bg-contact-us img{
-  width: 100%;
+  width: calc(100vw - 15px);
   height: calc(100vh - 75px);
   margin: 0;
   background: black;
 }
+.div-form{
+  margin-top: 50px;
+}
+.form-left,.form-right{
+  padding: 0 10px;
+}
+.form-left input{
+  height: 70px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 20px;
+}
+.form-right textarea{
+  width: 100%;
+  height: 100%;
+  /* border: none; */
+  border-radius: 5px;
+  padding-left: 20px;
+}
+.btn-send-message{
+  border-radius: 10px;
+  background: var(--bs-link-color);
+  padding: 20px 40px;
+  margin: 40px 0;
+  color: var(--bs-body-bg);
+  cursor: pointer;
+  border: none;
+}
+
   /* font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
   @media only screen and (max-width:600px){
     header nav ul{
@@ -426,5 +455,11 @@ header nav ul li a{
       height: 100px;
       border: 5px solid var(--bs-border-color) ;
       border-radius: 50%;
+    }
+    .form-right{
+      height: 100px;
+    }
+    .form-right textarea{
+      height: 100%;
     }
   }

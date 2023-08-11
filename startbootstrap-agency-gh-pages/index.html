@@ -141,7 +141,7 @@
             </section>
 
                             <!-- section about -->
-            <section class="about position-relative">
+            <!-- <section class="about position-relative">
                 <div class="container-about">
                     <h2>ABOUT</h2>
                     <h6>Lorem ipsum dolor sit amet consectetur.</h6>
@@ -201,7 +201,7 @@
                     </div>
                 </div>
                 <div class="ancre-team position-absolute" id="team"></div>
-            </section>
+            </section> -->
 
                             <!-- section team -->
             <section class="team" >
@@ -401,21 +401,22 @@
 
                     </div>
                 </div>
-                <div class="contact-us col-12">
+                <div class="contact-us col-12 d-flex flex-column justify-content-center align-items-center">
                     <div class="img-bg-contact-us position-absolute ">
-                        <img src="./assets/img/map-image.png" alt="">
+                        <!-- <img src="./assets/img/map-image.png" alt=""> -->
                     </div>
                     <h2>CONTACT US</h2>
                     <h6>Lorem ipsum dolor sit amet consectetur.</h6>
-                    <form action="">
-                        <div class="div-form">
-                            <div class="form-left">
-                                <input type="text" class="name" placeholder="Your Name *"><br>
-                                <input type="email" class="email" placeholder="Your Email *"><br>
-                                <input type="number" class="phone" placeholder="Your Phone *"><br>
+                    <form action="" class="col-lg-12 d-flex flex-column align-items-center">
+                        <div class="div-form col-12 d-flex justify-content-center flex-row flex-wrap">
+                            <div class="form-left col-lg-5 d-flex flex-column align-items-center">
+                                <input type="text" class="name col-lg-12" placeholder="Your Name *" required><br>
+                                <input type="email" class="email col-lg-12" placeholder="Your Email *" required><br>
+                                <input type="number" class="phone col-lg-12" placeholder="Your Phone *" required><br>
                             </div>
-                            <div class="form-right">
-                                <input type="text" class="message" placeholder="Your Message *"><br>
+                            <div class="form-right col-lg-5 ">
+                                <!-- <textarea type="" class="message col-lg-12" placeholder="Your Message *"> -->
+                                    <textarea   rows="10" placeholder="Your Message * "class="message col-lg-12 " required></textarea>
                             </div>
                         </div>
                         <button class="btn-send-message">SEND MESSAGE</button>
